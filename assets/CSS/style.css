@@ -15,8 +15,7 @@ body {
 
 .quiz-container {
     display: flex;
-    align-items: center;
-    width: 70px;
-    height: 70px;
+    flex-direction: column;  
+    width: 30rem;
     background-color: aliceblue;
 }
