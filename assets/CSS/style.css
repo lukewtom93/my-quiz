@@ -19,3 +19,11 @@ body {
     width: 30rem;
     background-color: aliceblue;
 }
+
+#quiz-question {
+    padding: 2rem;   
+}
+
+#next-btn {
+    height: 2rem;
+}
