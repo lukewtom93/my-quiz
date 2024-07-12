@@ -6,7 +6,7 @@
 
 body {
     display: flex;
-    background-color: black;
+    background-color: lightgray;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -20,7 +20,7 @@ body {
     background-color: aliceblue;
 }
 
-#quiz-question {
+#question-container {
     padding: 2rem;   
 }
 
