@@ -24,6 +24,12 @@ body {
     padding: 2rem;   
 }
 
+#question {
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
 #next-btn {
     height: 2rem;
 }
+
