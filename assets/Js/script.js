@@ -1,10 +1,13 @@
-/// const for all the elements in the index.html file ///
+/// const to get all the ellements from the DOM  ///
 const questionContainer = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButton = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
 const resultDiv = document.getElementById('result');
 const restartButton = document.getElementById('restart-btn');
+
+let shuffleQuestions, currentQuestion, score;
+
 const questions = [
     {
       question: "What is the largest island in the world?",
