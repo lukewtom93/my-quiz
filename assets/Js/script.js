@@ -37,3 +37,16 @@ const questions = [
       ],
     },
   ];
+
+  startQuiz()
+
+  function startQuiz() {
+    score = 0;
+    currentQuestion = 0;
+    shuffleQuestions = questions.sort(() => Math.random() - 0.5);
+
+  }
+
+  function setNextQuestion() {
+
+  }
