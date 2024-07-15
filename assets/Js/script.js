@@ -92,3 +92,18 @@ function showQuestion(question) {
 
 }
 
+/// Event Listener for the next button ///
+nextButton.addEventListener('click', () => {
+  const answerIndex = Array.from(
+    answerButton.querySelectorAll('input')
+  ).findIndex((radio) => radio.checked);
+  if (answerIndex !== -1) {
+    if (shuffleQuestions[currentQuestion].answers[answerIndex].correct) {
+      score++;
+    }
+    currentQuestion++;
+    if (shuffleQuestions.length > currentQuestion) {
+      setNextQuestion()
+    }
+  }
+})
