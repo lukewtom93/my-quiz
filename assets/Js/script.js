@@ -1,4 +1,4 @@
-/// const to get all the ellements from the DOM  ///
+/// const to get all the elements from the DOM  ///
 const questionContainer = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButton = document.getElementById('answer-buttons');

@@ -18,11 +18,12 @@ body {
     flex-direction: column;  
     width: 30rem;
     background-color: aliceblue;
+
 }
 
 #question-container {
     flex-direction: column;
-    padding: 2rem;   
+    padding: 2rem;
 }
 
 #question {
@@ -59,4 +60,20 @@ body {
 
 input {
     width: fit-content;
+}
+
+.btn {
+    padding: 1.5rem;
+    background-color: #70b5ff;
+    color: white;
+    border: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+input {
+    width: fit-content;
+}
+
+input, .btn {
+    cursor: pointer;
 }
