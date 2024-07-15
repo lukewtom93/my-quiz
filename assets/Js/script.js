@@ -47,18 +47,48 @@ const questions = [
     },
   ];
 
-  startQuiz()
+startQuiz()
 
-  function startQuiz() {
-    score = 0;
-    currentQuestion = 0;
-    shuffleQuestions = questions.sort(() => Math.random() - 0.5);
-    nextButton.classList.remove('hide');
+/**
+ * Starts the quiz with a score of 0
+ * 
+ */
+function startQuiz() {
+  score = 0;
+  currentQuestion = 0;
+  shuffleQuestions = questions.sort(() => Math.random() - 0.5);
+  setNextQuestion()
+}
 
-    setNextQuestion()
+function setNextQuestion() {
+  showQuestion(shuffleQuestions[currentQuestion])
 
-  }
+}
 
-  function setNextQuestion() {
+/**
+ * Creates elements in the DOM
+ * to display questions
+ */
+function showQuestion(question) {
+  questionElement.innerHTML = question.question;
+  question.answers.forEach((answer, index) => {
+    const inputGroup = document.createElement('div');
+    inputGroup.classList.add('input-group');
 
-  }
+    const radio = document.createElement('input');
+    radio.type ='radio';
+    radio.id = 'answer' + index;
+    radio.name = 'answer'
+    radio.value = index;
+
+    const label = document.createElement('label');
+    label.htmlFor = 'answer' + index
+    label.innerText = answer.text;
+
+    inputGroup.appendChild(radio);
+    inputGroup.appendChild(label);
+    answerButton.appendChild(inputGroup);
+  })
+
+}
+
