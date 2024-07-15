@@ -141,6 +141,8 @@ nextButton.addEventListener('click', () => {
     } else {
       endQuiz()
     }
+  } else {
+    alert('Please select an answer!')
   }
 })
 
