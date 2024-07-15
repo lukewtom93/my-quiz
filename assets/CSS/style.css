@@ -21,6 +21,7 @@ body {
 }
 
 #question-container {
+    flex-direction: column;
     padding: 2rem;   
 }
 
@@ -37,7 +38,12 @@ body {
     display: none;
 }
 
-#btn {
-    height: 2rem;
+#question {
+    text-align: center;
+}
 
+#answer-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }

@@ -54,9 +54,13 @@ startQuiz()
  * 
  */
 function startQuiz() {
+  questionContainer.style.display ='flex';
   score = 0;
   currentQuestion = 0;
   shuffleQuestions = questions.sort(() => Math.random() - 0.5);
+  nextButton.classList.remove('hide');
+  restartButton.classList.add('hide');
+  resultDiv.classList.add('hide');
   setNextQuestion()
 }
 
