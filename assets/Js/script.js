@@ -114,6 +114,7 @@ function endQuiz() {
   nextButton.classList.add('hide');
   restartButton.classList.remove('hide');
   resultDiv.classList.remove('hide');
+  resultDiv.innerText = `Your Final Score: ${score} / ${shuffleQuestions.length}`;
 
 }
 
@@ -134,3 +135,5 @@ nextButton.addEventListener('click', () => {
     }
   }
 })
+
+restartButton.addEventListener('click', startQuiz)
