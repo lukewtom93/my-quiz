@@ -31,7 +31,7 @@ body {
 
 #question {
     text-align: center;
-    margin: 0 0 1rem;
+    margin: 1rem;
 }
 
 #next-btn, #restart-btn {
@@ -44,7 +44,7 @@ body {
 
 #question {
     text-align: center;
-    margin: 1rem 0 0;
+    margin: 1rem 0;
 }
 
 #answer-buttons {
@@ -73,14 +73,19 @@ input {
     border-radius: 0 0 0.5rem 0.5rem;
 }
 
-input {
-    width: fit-content;
-}
-
 input, .btn {
     cursor: pointer;
 }
 
 .btn:hover {
     background-color: #0f82fd;
+}
+
+#result {
+    margin: 2rem auto;
+}
+
+#question, #result {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
