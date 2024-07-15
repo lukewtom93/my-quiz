@@ -38,6 +38,12 @@ body {
     height: 2rem;
 }
 
+#question, #result {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hide Class */
 .hide {
     display: none;
 }
@@ -47,6 +53,7 @@ body {
     margin: 1rem 0;
 }
 
+/* Radio Buttons */
 #answer-buttons {
     display: flex;
     flex-direction: column;
@@ -73,6 +80,7 @@ input {
     border-radius: 0 0 0.5rem 0.5rem;
 }
 
+/* Active CSS */
 input, .btn {
     cursor: pointer;
 }
@@ -85,7 +93,3 @@ input, .btn {
     margin: 2rem auto;
 }
 
-#question, #result {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
