@@ -109,6 +109,14 @@ function resetQuestion() {
   }
 }
 
+function endQuiz() {
+  questionContainer.style.display = 'none';
+  nextButton.classList.add('hide');
+  restartButton.classList.remove('hide');
+  resultDiv.classList.remove('hide');
+  
+}
+
 /// Event Listener for the next button ///
 nextButton.addEventListener('click', () => {
   const answerIndex = Array.from(
