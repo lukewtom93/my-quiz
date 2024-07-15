@@ -109,6 +109,10 @@ function resetQuestion() {
   }
 }
 
+/**
+ * Displays the score at the end
+ * of the quiz.
+ */
 function endQuiz() {
   questionContainer.style.display = 'none';
   nextButton.classList.add('hide');

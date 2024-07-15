@@ -29,10 +29,15 @@ body {
     margin: 0 0 1rem;
 }
 
-#next-btn {
+#next-btn, #restart-btn {
     height: 2rem;
 }
 
 .hide {
     display: none;
+}
+
+#btn {
+    height: 2rem;
+
 }
