@@ -60,10 +60,7 @@ function startQuiz() {
   setNextQuestion()
 }
 
-function setNextQuestion() {
-  showQuestion(shuffleQuestions[currentQuestion])
 
-}
 
 /**
  * Creates elements in the DOM
@@ -90,6 +87,26 @@ function showQuestion(question) {
     answerButton.appendChild(inputGroup);
   })
 
+}
+
+/**
+ * Gets questions vairable to
+ * input in the showQuestion function
+ * and resets the question
+ */
+function setNextQuestion() {
+  resetQuestion()
+  showQuestion(shuffleQuestions[currentQuestion])
+
+}
+
+/**
+ * Removes the current answer buttons
+ */
+function resetQuestion() {
+  while (answerButton.firstChild) {
+    answerButton.removeChild(answerButton.firstChild);
+  }
 }
 
 /// Event Listener for the next button ///
