@@ -114,7 +114,7 @@ function endQuiz() {
   nextButton.classList.add('hide');
   restartButton.classList.remove('hide');
   resultDiv.classList.remove('hide');
-  
+
 }
 
 /// Event Listener for the next button ///
@@ -129,6 +129,8 @@ nextButton.addEventListener('click', () => {
     currentQuestion++;
     if (shuffleQuestions.length > currentQuestion) {
       setNextQuestion()
+    } else {
+      endQuiz()
     }
   }
 })
